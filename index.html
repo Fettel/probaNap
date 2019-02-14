@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>D3 World Map</title>
+    <style>
+      body {
+        background: #1488cc; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1488cc, #2b32b2); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1488cc, #2b32b2);
+        text-align: center;
+        font-family: "Source Code Pro", Consolas, monaco, monospace;
+        background-repeat: no-repeat;
+      }
+      h1, h3, p{
+        text-align:center;
+      }
+      #tooltip {
+        text-align: left;
+        padding: 16px;
+        background-color: lightsalmon;
+        border: 1px solid black;
+        width: auto;
+        opacity: 0;
+        color: black;
+        position: absolute;
+      }
+      path {
+        stroke: rgb(2, 184, 47);          
+        stroke-width: 0.5px;   
+        fill: rgb(250, 234, 163);         
+      }
+    </style>
+    <script src="http://d3js.org/topojson.v1.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="data2.js"></script>
+    <script type="text/javascript" src="mapping.js"></script>
+    
+  </head>
+  <body>
+      <h1>Travel Data Across the Globe</a></h1>
+      <h5>Zoom in/out | Hover over the data point for additional data</h5>
+      <div id="map"></div>
+      <div id="chart"></div>
+      
+      <div id="tooltip">
+        Hotel name: <span id="hotelName" class="info"></span><br> 
+        Lat: <span id="lat" class="info"></span><br>
+        Lon: <span id="lon" class="info"></span><br> 
+        Guests: <span id="count" class="info"></span><br>  
+      </div>
+    <script type="text/javascript">
+
+    </script>
+  </body>
+</html>
